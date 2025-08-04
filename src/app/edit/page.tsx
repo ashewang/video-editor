@@ -14,14 +14,15 @@ export default function EditPage() {
             </button>
           </Link>
         </div>
-        
+
         <div className="bg-gray-100 rounded-lg p-8 text-center">
           <h2 className="text-2xl text-gray-600 mb-4">Coming Soon</h2>
           <p className="text-gray-500">
-            The video editor interface is under development. Check back later for updates!
+            The video editor interface is under development. Check back later
+            for updates!
           </p>
         </div>
       </div>
     </div>
   );
-} 
+}
