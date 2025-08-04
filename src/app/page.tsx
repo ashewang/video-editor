@@ -4,6 +4,7 @@ import { Player } from "@remotion/player";
 import type { NextPage } from "next";
 import React, { useMemo, useState } from "react";
 import { z } from "zod";
+import Link from "next/link";
 import {
   defaultMyCompProps,
   CompositionProps,
@@ -27,7 +28,14 @@ const Home: NextPage = () => {
   }, [text]);
 
   return (
-    <div>
+    <div className="relative">
+      <div className="fixed top-2 right-4">
+        <Link href="/edit">
+          <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors">
+            Open Editor
+          </button>
+        </Link>
+      </div>
       <div className="max-w-screen-md m-auto mb-5">
         <div className="overflow-hidden rounded-geist shadow-[0_0_200px_rgba(0,0,0,0.15)] mb-10 mt-16">
           <Player
